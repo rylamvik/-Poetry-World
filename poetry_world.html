@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>
+  </head>
+  <body>
+	<a-scene>
+
+	 <a-assets>
+   	 	 <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+   	 	 <img id="skyTexture" 
+   	 		  src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+   	 	 <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+   	 </a-assets>
+
+ 	 <a-box src="#boxTexture" position="0 1 -5" rotation="0 45 45" scale="1 1 1">
+ 	 
+ 		  <a-animation attribute="position" to="0 1.2 -5" direction="alternate" dur="1500" repeat="indefinite"></a-animation>
+ 	 	  <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+  		<a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+  		<a-animation attribute="rotation" begin="click" dur="9000" to="0 445 45" repeat="indefinite"></a-animation>
+
+ 	 </a-box>
+
+ 	 <a-camera position="0 0 5">
+     	<a-cursor></a-cursor>
+  	 </a-camera>
+	
+  	 <a-sky src="#skyTexture"></a-sky>
+
+ 	   <a-plane src="#groundTexture" rotation="-90 0 0" width="20" height="20" repeat="1 1" position="0 -1.5 0"></a-plane>
+
+  	 <a-light type="ambient" color="#445451"></a-light>
+  	 <a-light type="point" intensity="1" position="-1 4 4"></a-light>
+
+  	 <a-sound src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay="true"
+     position="0 0 0"></a-sound>
+
+     <a-entity bmfont-text="text:
+     	Smoke
+  		Henry David Thoreau, 1843
+
+  		Light-winged Smoke! Icarian bird,	
+  		Melting thy pinions in thy upward flight
+
+  		Lark without song, and messenger of dawn,	
+  		Circling above the hamlets as thy nest	
+
+  		Or else, departing dream, and shadowy form
+  		Of midnight vision, gathering up thy skirts
+
+  		By night star-veiling, and by day	
+  		Darkening the light and blotting out the sun
+
+  		Go thou, my incense, upward from this hearth,	
+  		And ask the gods to pardon this clear flame;
+      color: #BBB"
+      position="-3 2 -7"
+  	  scale="1.5 1.5 1.5"></a-entity>
+
+      <a-entity bmfont-text="text:
+      Smoke
+      Henry David Thoreau, 1843
+
+      Light-winged Smoke! Icarian bird, 
+      Melting thy pinions in thy upward flight
+
+      Lark without song, and messenger of dawn, 
+      Circling above the hamlets as thy nest  
+
+      Or else, departing dream, and shadowy form
+      Of midnight vision, gathering up thy skirts
+
+      By night star-veiling, and by day 
+      Darkening the light and blotting out the sun
+
+      Go thou, my incense, upward from this hearth, 
+      And ask the gods to pardon this clear flame
+
+      ; color: #BBB" 
+      position="8 2 -1"
+      scale="1.5 1.5 1.5"
+      rotation="0 270 0"></a-entity>
+
+      <a-entity bmfont-text="text:
+      Smoke
+      Henry David Thoreau, 1843
+
+      Light-winged Smoke! Icarian bird, 
+      Melting thy pinions in thy upward flight
+
+      Lark without song, and messenger of dawn, 
+      Circling above the hamlets as thy nest  
+
+      Or else, departing dream, and shadowy form
+      Of midnight vision, gathering up thy skirts
+
+      By night star-veiling, and by day 
+      Darkening the light and blotting out the sun
+
+      Go thou, my incense, upward from this hearth, 
+      And ask the gods to pardon this clear flame
+
+      ; color: #BBB" 
+      position="-8 2 -1"
+      scale="1.5 1.5 1.5"
+      rotation="0 90 0"></a-entity>
+
+
+	</a-scene>
+  <body>
+</html>

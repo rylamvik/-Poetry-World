@@ -12,20 +12,19 @@
    	 	 <img id="skyTexture" 
    	 		  src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
    	 	 <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+       <a-asset-item id="myPlyModel" src="https://ucarecdn.com/ecc6e5e8-1460-4530-a9ed-10abfb4c4a11/"></a-asset-item>
    	 </a-assets>
 
- 	 <a-box src="#boxTexture" position="0 1 -5" rotation="0 45 45" scale="1 1 1">
+ 	 <a-box src="#boxTexture" position="0 1 -0" rotation="0 45 45" scale="1 1 1">
  	 
- 		  <a-animation attribute="position" to="0 1.2 -5" direction="alternate" dur="1500" repeat="indefinite"></a-animation>
- 	 	  <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
-  		<a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+ 		  <a-animation attribute="position" to="0 1.2 -0" direction="alternate" dur="1500" repeat="indefinite"></a-animation>
   		<a-animation attribute="rotation" begin="click" dur="9000" to="0 445 45" repeat="indefinite"></a-animation>
 
  	 </a-box>
 
- 	 <a-camera position="0 0 5">
+ 	    <a-camera position="0 0 5">
      	<a-cursor></a-cursor>
-  	 </a-camera>
+  	  </a-camera>
 	
   	 <a-sky src="#skyTexture"></a-sky>
 
@@ -33,11 +32,11 @@
 
   	 <a-light type="ambient" color="#445451"></a-light>
   	 <a-light type="point" intensity="1" position="-1 4 4"></a-light>
+  	 <a-sound src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay="true" position="0 0 0"></a-sound>
 
-  	 <a-sound src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay="true"
-     position="0 0 0"></a-sound>
+     <a-entity ply-model="src: #myPlyModel" rotation="-90 0 0" position="0 3 0"></a-entity>
 
-     <a-entity bmfont-text="text:
+      <a-entity bmfont-text="text:
      	Smoke
   		Henry David Thoreau, 1843
 
@@ -56,32 +55,94 @@
   		Go thou, my incense, upward from this hearth,	
   		And ask the gods to pardon this clear flame;
       color: #BBB"
-      position="-3 2 -7"
+      position="-3 1 -8"
   	  scale="1.5 1.5 1.5"></a-entity>
 
       <a-entity bmfont-text="text:
-      Smoke
-      Henry David Thoreau, 1843
+      untitled
+      Robert Lamvik, 2017
 
-      Light-winged Smoke! Icarian bird, 
-      Melting thy pinions in thy upward flight
+      boundaries of self and state
+      it’s all yours now
 
-      Lark without song, and messenger of dawn, 
-      Circling above the hamlets as thy nest  
+      a(nother) superficial interaction 
+      many have done what you’ve done …
 
-      Or else, departing dream, and shadowy form
-      Of midnight vision, gathering up thy skirts
-
-      By night star-veiling, and by day 
-      Darkening the light and blotting out the sun
-
-      Go thou, my incense, upward from this hearth, 
-      And ask the gods to pardon this clear flame
+      would you do it again?
+              it burns away quickly
 
       ; color: #BBB" 
-      position="8 2 -1"
+      position="8 2 -2"
       scale="1.5 1.5 1.5"
       rotation="0 270 0"></a-entity>
+
+      <a-entity bmfont-text="text:
+      untitled
+      Robert Lamvik, 2017
+
+      see thru time it
+      sees thru you
+        
+        stare into screens
+             not eyes
+             into serial lies
+        
+        stay in control
+             they said
+             let it rob your soul
+        
+        you having a good time
+             on this trip?
+              we won’t go far
+        
+        I should have something
+             to leave you with
+
+      ; color: #BBB" 
+      position="-8 1 3"
+      scale="1.5 1.5 1.5"
+      rotation="0 90 0"></a-entity>
+
+      <a-entity bmfont-text="text:
+      Bluebird
+      Charles Bukowski, 1986
+      
+        there's a bluebird in my heart that wants to get out
+        but I'm too tough for him,
+        I say, stay in there, I'm not going
+        to let anybody see you.
+
+        there's a bluebird in my heart that
+        wants to get out
+        but I pour whiskey on him and inhale
+        cigarette smoke
+        and the whores and the bartenders
+        and the grocery clerks
+        never know that he's in there.
+
+        there's a bluebird in my heart that wants to get out
+        but I'm too tough for him, I say,
+        stay down, do you want to mess me up?
+        you want to screw up the works?
+        you want to blow my book sales in Europe?
+        there's a bluebird in my heart that
+        wants to get out
+        but I'm too clever, I only let him out
+        at night sometimes
+        when everybody's asleep.
+
+        I say, I know that you're there,
+        so don't be sad.
+        then I put him back,
+        but he's singing a little
+        in there, I haven't quite let him die
+        and we sleep together like that with our secret pact
+        and it's nice enough to make a man weep,
+        but I don't weep, do you?
+      ; color: #BBB" 
+      position="3 .5 9"
+      scale="1.5 1.5 1.5"
+      rotation="15 180 0"></a-entity>
 
 
 	</a-scene>
